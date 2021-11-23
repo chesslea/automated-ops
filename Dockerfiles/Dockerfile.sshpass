@@ -1,0 +1,8 @@
+FROM gocd/gocd-agent-ubuntu-18.04:v21.3.0
+
+USER root
+
+RUN apt update && \
+	apt install -y sshpass
+
+USER go
