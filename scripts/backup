@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -x
+
+sshpass -p $ssh-pass ssh -o StrictHostKeyChecking=no ubuntu@www.chessman.cloud /home/ubuntu/blog/scripts/mysql-backup
